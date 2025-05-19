@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Source | Diabetic Comfort & Control</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #d0ecff, #eaf7ff);
+      color: #003366;
+    }
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      padding: 60px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: radial-gradient(circle at top left, rgba(0,123,255,0.15), transparent),
+                  radial-gradient(circle at bottom right, rgba(0,191,255,0.15), transparent);
+    }
+    .container {
+      width: 100%;
+      max-width: 960px;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 80px rgba(0, 128, 255, 0.2);
+      margin-bottom: 40px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #004080;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      margin: 30px 0 10px;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      background: #f4faff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 174, 255, 0.15);
+    }
+    .product img {
+      flex: 1;
+      max-width: 300px;
+      border-radius: 20px 0 0 20px;
+      object-fit: contain;
+    }
+    .product-details {
+      flex: 2;
+      padding: 20px 30px;
+    }
+    .product-details ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    .product-details li {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .save {
+      color: #e67e22;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      background: linear-gradient(90deg, #007bff, #00bfff);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 10px 30px rgba(0, 128, 255, 0.4);
+    }
+
+    /* Popup Banner */
+    .popup-banner {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff0066;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      z-index: 999;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Products -->
+  <div class="page">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:30px;">
+        <img src="images/logo.png" alt="Medical Source Logo" width="160">
+      </div>
+      <h1>Next-Gen Solutions for Diabetic Comfort & Control</h1>
+
+      <div class="product">
+        <img src="images/freestyle.png" alt="FreeStyle Lite">
+        <div class="product-details">
+          <h2>FreeStyle Lite Blood Glucose Test Strips – 100 Count</h2>
+          <ul>
+            <li>No coding required</li>
+            <li>Small sample size</li>
+            <li>Fast and accurate results</li>
+          </ul>
+          <p class="save">SAVE 49%</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/verio.png" alt="OneTouch Verio">
+        <div class="product-details">
+          <h2>OneTouch Verio Test Strips – 30 Count</h2>
+          <ul>
+            <li>For OneTouch Verio Meters</li>
+            <li>Clinically proven accuracy</li>
+            <li>FSA/HSA Eligible</li>
+          </ul>
+          <p class="save">SAVE 39%</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="https://medicalsource.com">Shop Now at MedicalSource.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 2: Contact Info -->
+  <div class="page">
+    <div class="container">
+      <h1>Get in Touch with Medical Source</h1>
+      <h2>We're Here to Help</h2>
+      <div style="text-align:center; font-size: 16px; line-height: 1.7; color: #003366;">
+        <p><strong>Address:</strong><br>44 Bethpage Road, Unit 7, Hicksville, NY 11801</p>
+        <p><strong>Phone:</strong> (888) 995-0220</p>
+        <p><strong>Email:</strong> info@medicalsource.com</p>
+        <p><strong>Website:</strong> <a href="https://medicalsource.com" style="color:#007bff;">www.medicalsource.com</a></p>
+      </div>
+      <h2>Why Choose Us?</h2>
+      <ul style="font-size: 16px; padding-left: 30px; color: #004080;">
+        <li>✅ Trusted by over 45,000 customers nationwide</li>
+        <li>✅ Fast shipping & competitive pricing</li>
+        <li>✅ Extensive range of diabetic care products</li>
+        <li>✅ Proudly American owned & operated</li>
+        <li>✅ HSA/FSA eligible supplies</li>
+      </ul>
+      <div class="cta">
+        <a href="https://medicalsource.com">Explore More Products</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Permanent Discount Popup -->
+  <div class="popup-banner">
+    🎉 15% OFF on First Purchase! Use Code: <strong>FIRST15</strong>
+  </div>
+
+</body>
+</html>
